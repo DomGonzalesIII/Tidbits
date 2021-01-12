@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+  <title></title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Description of the page less than 150 characters">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="card">
+
+    <img src="img/discover.png" alt="Discover" class="card-logo" width="64px">
+
+    <!-- TODO:  Update card number to space numbers as user types -->
+    <div class="card-number">
+      <input type="text" value="1234 5678 9012 3456" onfocus="this.value=''" maxlength="19" />
+    </div>
+
+    <div class="card-flex">
+      <div class="card-input">
+        <label for="cardHolder">Holder</label>
+        <input type="text" value="Jane Doe" id="holder" onfocus="this.value=''">
+      </div>
+      <div class="card-input">
+        <!-- TODO: Add leading 0 to single digit months -->
+        <label for="expirationMonth">Expires</label>
+        <input type="number" value="12" max="12" id="expirationMonth" onfocus="this.value=''">
+      </div>
+      <div class="card-input">
+        <label for="expirationYear" style="display: none;">Expires</label>
+        <input type="number" value="21" max="99" id="expirationMonth" onfocus="this.value=''">
+      </div>
+      <div class="card-input">
+        <label for="cvc">CVC</label>
+        <input type="number" value="123" max="999" id="cvc" onfocus="this.value=''">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
