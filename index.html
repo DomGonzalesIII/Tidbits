@@ -22,11 +22,12 @@
 
   <div class="card">
 
-    <img src="img/discover.png" alt="Discover" class="card-logo" width="64px">
+
+    <img src="#" alt="" class="card-logo" width="64px">
 
     <!-- TODO:  Update card number to space numbers as user types -->
-    <div class="card-number">
-      <input type="text" value="1234 5678 9012 3456" onfocus="this.value=''" maxlength="19" />
+    <div class="card-input card-number">
+      <input type="text" value="1234 5678 9012 3456" id="cardNum" onfocus="this.value=''" maxlength="19" />
     </div>
 
     <div class="card-flex">
@@ -36,12 +37,13 @@
       </div>
       <div class="card-input">
         <!-- TODO: Add leading 0 to single digit months -->
-        <label for="expirationMonth">Expires</label>
-        <input type="number" value="12" max="12" id="expirationMonth" onfocus="this.value=''">
-      </div>
-      <div class="card-input">
-        <label for="expirationYear" style="display: none;">Expires</label>
-        <input type="number" value="21" max="99" id="expirationMonth" onfocus="this.value=''">
+        <label for="expirationMonth" class="expDate">Expires</label>
+        <div class="expiration-date">
+          <input type="number" value="12" max="12" id="expirationMonth" onfocus="this.value=''">
+          <span>/</span>
+          <label for="expirationYear" style="display: none;">Expires</label>
+          <input type="number" value="21" max="99" id="expirationYear" onfocus="this.value=''">
+        </div>
       </div>
       <div class="card-input">
         <label for="cvc">CVC</label>
@@ -50,6 +52,10 @@
     </div>
 
   </div>
+
+  <script type="text/javascript" src="index.js"></script>
+
+  </script>
 
 </body>
 
